@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HomeworkTwo</string>
+    <string name="pokemon_height">Height: %s</string>
+    <string name="pokemon_weight">Weight: %s</string>
+    <string name="pokemon_ID">ID#: %s</string>
+    <string name="pokemon_stats">Stats</string>
+    <string name="pokemon_base_exp">Base Exp: %s</string>
+    <string name="pokemon_health">Health: %s</string>
+    <string name="pokemon_speed">Speed: %s</string>
+    <string name="pokemon_attack">Attack: %s</string>
+    <string name="pokemon_defense">Defense: %s</string>
+    <string name="pokemon_spec_attack">Spec. Attack: %s</string>
+    <string name="pokemon_spec_defense">Spec. Defense: %s</string>
+    <string name="no_internet">No internet connection!</string>
+</resources>

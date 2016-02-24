@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pokemon_details_view"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lclark.homeworktwo.PokemonDetail">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/pokemon_imageview_pokemon_detail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pokemon_imageview_pokemon_detail"
+        android:id="@+id/pokemon_height_textview_pokemon_detail"
+        tools:text="height"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_weight_textview_pokemon_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pokemon_height_textview_pokemon_detail"
+        tools:text="weight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_id_textview_pokemon_detail"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pokemon_imageview_pokemon_detail"
+        tools:text="Id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_stats_detail_view"
+        android:text="@string/pokemon_stats"
+        android:layout_below="@id/pokemon_weight_textview_pokemon_detail"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_progress_bar"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_below="@id/pokemon_stats_detail_view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_health"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pokemon_details_progress_bar"
+        android:textSize="24sp"
+        android:text="@string/pokemon_health"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_attack"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pokemon_details_health"
+        android:textSize="24sp"
+        android:text="@string/pokemon_attack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_defense"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pokemon_details_attack"
+        android:textSize="24sp"
+        android:text="@string/pokemon_defense"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_speed"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pokemon_details_progress_bar"
+        android:textSize="24sp"
+        android:text="@string/pokemon_speed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_special_attack"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pokemon_details_speed"
+        android:textSize="24sp"
+        android:text="@string/pokemon_spec_attack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_special_defense"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pokemon_details_special_attack"
+        android:textSize="24sp"
+        android:text="@string/pokemon_spec_defense"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_details_base_experience"
+        android:layout_below="@+id/pokemon_details_defense"
+        android:textSize="24sp"
+        android:text="@string/pokemon_base_exp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

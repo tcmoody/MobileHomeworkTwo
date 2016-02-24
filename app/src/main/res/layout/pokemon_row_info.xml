@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lclark.homeworktwo.PokemonRecyclerView">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/pokemon_imageview"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_id_textview"
+        android:layout_alignParentEnd="true"
+        android:textSize="26sp"
+        tools:text="id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_name_textview"
+        android:layout_toRightOf="@id/pokemon_imageview"
+        android:textSize="26sp"
+        tools:text="Charmander"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_height_textview"
+        android:layout_below="@id/pokemon_name_textview"
+        android:layout_toRightOf="@id/pokemon_imageview"
+        tools:text="height"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_weight_textview"
+        android:layout_below="@id/pokemon_height_textview"
+        android:layout_toRightOf="@id/pokemon_imageview"
+        tools:text="weight"/>
+
+
+</RelativeLayout>
