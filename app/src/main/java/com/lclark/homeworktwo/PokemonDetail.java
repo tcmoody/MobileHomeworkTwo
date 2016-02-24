@@ -73,7 +73,8 @@ public class PokemonDetail extends AppCompatActivity{
 
             updatePokemon();
         }else{
-            Log.d(TAG, "great success");
+            updatePokemon();
+            mProgress.setVisibility(View.INVISIBLE);
             mHp.setVisibility(View.VISIBLE);
             mAttack.setVisibility(View.VISIBLE);
             mDefense.setVisibility(View.VISIBLE);
@@ -90,7 +91,7 @@ public class PokemonDetail extends AppCompatActivity{
         mDefense.setText(getString(R.string.pokemon_defense, mPokemon.getmDefense()));
         mSpeed.setText(getString(R.string.pokemon_speed, mPokemon.getmSpeed()));
         mSpecAttack.setText(getString(R.string.pokemon_spec_attack, mPokemon.getmSpecAttack()));
-        mSpecDefense.setText(getString(R.string.pokemon_spec_defense, mPokemon.getmDefense()));
+        mSpecDefense.setText(getString(R.string.pokemon_spec_defense, mPokemon.getmSpecDef()));
         mBaseExp.setText(getString(R.string.pokemon_base_exp, mPokemon.getmBaseExp()));
     }
 

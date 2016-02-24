@@ -117,10 +117,6 @@ public class Pokemon implements Parcelable{
         return o instanceof Pokemon && ((Pokemon) o).getId().equals(getId());
     }
 
-    public void setUpdated(boolean updated) {
-        isUpdated = updated;
-    }
-
     @Override
     public int describeContents() {
         return 0;
@@ -133,6 +129,13 @@ public class Pokemon implements Parcelable{
         parcel.writeString(mSpeciesId);
         parcel.writeString(mHeight);
         parcel.writeString(mWeight);
+        parcel.writeString(mHp);
+        parcel.writeString(mAttack);
+        parcel.writeString(mDefense);
+        parcel.writeString(mSpeed);
+        parcel.writeString(mSpecAttack);
+        parcel.writeString(mSpecDef);
+        parcel.writeString(mBaseExp);
     }
 
     public static final Parcelable.Creator<Pokemon> CREATOR = new Creator<Pokemon>() {
@@ -153,5 +156,12 @@ public class Pokemon implements Parcelable{
         mSpeciesId = parcel.readString();
         mHeight = parcel.readString();
         mWeight = parcel.readString();
+        mHp = parcel.readString();
+        mAttack = parcel.readString();
+        mDefense = parcel.readString();
+        mSpeed = parcel.readString();
+        mSpecAttack = parcel.readString();
+        mSpecDef = parcel.readString();
+        mBaseExp = parcel.readString();
     }
 }

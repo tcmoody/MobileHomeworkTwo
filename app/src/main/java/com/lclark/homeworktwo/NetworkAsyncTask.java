@@ -129,7 +129,6 @@ public class NetworkAsyncTask extends AsyncTask<String, Integer, JSONObject> {
             mPokemonDetail.mSpecAttack.setVisibility(View.VISIBLE);
             mPokemonDetail.mSpecDefense.setVisibility(View.VISIBLE);
             mPokemonDetail.mBaseExp.setVisibility(View.VISIBLE);
-            mPokemon.setUpdated(true);
 
         }
     }
